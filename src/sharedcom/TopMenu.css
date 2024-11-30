@@ -1,0 +1,86 @@
+.AppBar {
+    background-color: #333;
+}
+
+.name1 {
+    font-size: 12px;
+    padding: 1px;
+    margin: 8px;
+    color: rgba(27, 27, 27, 1);
+}
+
+.name2 {
+    font-size: 12px;
+    padding: 1px;
+    margin: 8px;
+    color: rgba(27, 27, 27, 1);
+}
+
+.grid-container-first {
+    display: grid;
+    /* height: 40%; /* Set height to full viewport height */
+    /* width: 100%; /* Set to take full width */
+    grid-template-columns: repeat(3, 1fr);
+    /* Create three equal columns */
+    grid-template-columns: 10fr 2fr 0.4fr;
+    /* Define different column sizes using fractions */
+    gap: 0px;
+    /* Space between grid items */
+    /* padding: 0px; /* Add some padding around the grid */
+}
+
+.grid-item-type11 {
+    background-color: rgba(78, 75, 76, 0.368);
+    padding: 25px;
+    /* Increase padding for better visualization */
+    text-align: center;
+    border: 1px solid #ccc;
+    /* Optional border for clarity */
+    margin-top: 0px;
+}
+
+.grid-item-type12 {
+    background-color: rgba(78, 75, 76, 0.368);
+    padding: 25px;
+    /* Increase padding for better visualization */
+    text-align: center;
+    border: 1px solid #ccc;
+    /* Optional border for clarity */
+    margin-top: 0px;
+}
+
+.grid-item-type13 {
+    background-color: rgba(78, 75, 76, 0.368);
+    padding: 25px;
+    /* Increase padding for better visualization */
+    text-align: center;
+    border: 1px solid #ccc;
+    /* Optional border for clarity */
+    margin-top: 0px;
+    Align: 'right'
+}
+
+.grid-container-second {
+    display: grid;
+    /* height: 40%; /* Set height to full viewport height */
+    width: 100%;
+    /* Set to take full width */
+    grid-template-columns: repeat(3, 1fr);
+    /* Create three equal columns */
+    grid-template-columns: 0.5fr 0.5r 0.5fr;
+    /* Define different column sizes using fractions */
+    gap: 0px;
+    /* Space between grid items */
+    padding: 0;
+    /* Add some padding around the grid */
+}
+
+.grid-item-type2 {
+    background-color: rgba(78, 75, 76, 0.368);
+    padding: 25px;
+    /* Increase padding for better visualization */
+    text-align: center;
+    border: 1px solid #ccc;
+    /* Optional border for clarity */
+    margin-top: 10px;
+}

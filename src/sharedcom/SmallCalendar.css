@@ -1,0 +1,9 @@
+/* src/SmallCalendar.css */
+.small-calendar {
+    width: 300px; /* Adjust width to make it smaller */
+    margin: 0 auto; /* Center the calendar */
+    border: 2px solid #007bff; /* Optional border color */
+    border-radius: 10px; /* Rounded corners for aesthetics */
+  }
+  
+  /* Additional styles as needed */

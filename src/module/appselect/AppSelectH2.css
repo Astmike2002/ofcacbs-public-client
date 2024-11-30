@@ -1,0 +1,97 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    padding: 48px 240px;
+    position: relative;
+    background-color: #00000066;
+    background-image: url(./img/header.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.header .text-title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--hitbox);
+}
+
+.header .wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.header .text {
+    font-family: var(--body-regular-font-family);
+    font-weight: var(--body-regular-font-weight);
+    font-size: var(--body-regular-font-size);
+    line-height: var(--body-regular-line-height);
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: var(--greywhite);
+    letter-spacing: var(--body-regular-letter-spacing);
+    white-space: nowrap;
+    font-style: var(--body-regular-font-style);
+}
+
+.header .icon-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--hitbox);
+}
+
+.header .union-wrapper {
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+
+.header .union {
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    top: 2px;
+    left: 4px;
+}
+
+.header .text-wrapper {
+    display: flex;
+    align-self: stretch;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--hitbox);
+}
+
+.header .div {
+    text-shadow: 0px 5px 16px 2px #0000001a;
+    font-family: var(--display-d6-font-family);
+    font-weight: var(--display-d6-font-weight);
+    font-size: var(--display-d6-font-size);
+    line-height: var(--display-d6-line-height);
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    color: var(--greywhite);
+    letter-spacing: var(--display-d6-letter-spacing);
+    white-space: nowrap;
+    font-style: var(--display-d6-font-style);
+    box-shadow: var(--shadow-large-shadow);
+}

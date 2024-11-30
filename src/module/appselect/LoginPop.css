@@ -1,0 +1,179 @@
+/* .modal-login {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 24px 32px 56px;
+    position: relative;
+    background-color: var(--greywhite);
+    box-shadow: var(--shadow-large-shadow);
+}
+
+.modal-login .heading-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.modal-login .logo-ofca-logo-name {
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.modal-login .logo-ofca-logo {
+    display: flex;
+    width: 106px;
+    height: 44px;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+}
+
+.modal-login .image {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.modal-login .frame {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 2px;
+    flex-direction: column;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.modal-login .div-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--hitbox);
+}
+
+.modal-login .text {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    opacity: 0.01;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #616060;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 18.2px;
+    white-space: nowrap;
+}
+
+.modal-login .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    opacity: 0.01;
+    font-family: "Roboto-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #616060;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.modal-login .right-container {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+ */
+
+
+ .modal {
+    position: fixed; /* This allows the modal to overlay the viewport */
+    top:  110px;
+    left: 0;
+    width: 100%;  /* Full width */
+    height: 40%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    
+    justify-content: center; /* Center modal content horizontally */
+    /* align-items: center; /* Center modal content vertically
+    z-index: 1000; /* High z-index to ensure it appears on top */
+}
+
+.modal-content {
+    background: white; /* Background color of the modal */
+    padding: 3px;
+    border-radius: 5px;
+    width: 40%; /* Adjust according to need */
+    box-shadow: 0 2px 10px rgba(19, 17, 17, 0.5);  /*Optional shadow for depth */
+} 
+
+.img {
+    float: left; /* Float the image to the left */
+}
+
+.newline {margin-top: 20px;}
+
+.close {
+    position: absolute; /* Position relative to the nearest relative ancestor */
+    right: 600px; /* Position from the right */
+    top: 10px; /* Position from the top */
+    font-size: 24px; /* Size of the close button */
+    cursor: pointer; /* Cursor pointer on hover */
+    color: #aaa; /* Color of the close button */
+}
+
+
+.text-21 {right: 900px; font-size: 18x;} 
+/* .text-22 {margin: 0px 30px; font-size: 18x;} 
+.text-23 {margin: 0px 30px; font-size: 18x;} 
+.text-24 {margin: 0px 30px; font-size: 18x;}   */
+
+/*
+.text-2 {left: 30px; font-size: 18px;} 
+.text-3 {left: 30; font-size: 18px;} 
+.text-4 {left: 30; font-size: 18px;}  */
+
+/* .text-wrapper {
+    font-family: var(--body-bold-18-font-family);
+    font-weight: var(--body-bold-18-font-weight);
+    color: #333333;
+    font-style: var(--body-bold-18-font-style);
+    letter-spacing: var(--body-bold-18-letter-spacing);
+    line-height: var(--body-bold-18-line-height);
+    font-size: var(--body-bold-18-font-size);
+} */
+
+.grid-container {
+    display: grid;
+    height: 8vh; /* Set height to full viewport height */
+    /* width: 100%; /* Set to take full width */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    grid-template-columns: 310px 110px 1px; /* Define different column sizes using fractions */
+    gap: 5px; /* Space between grid items */
+    padding: 0px; /* Add some padding around the grid */
+  }
+  
+  .grid-item {
+    /* background-color: rgba(78, 75, 76, 0.368); */
+    background-color: white;
+    padding: 0x; /* Increase padding for better visualization */
+    text-align: center;
+    margin-top: 10px;
+  }

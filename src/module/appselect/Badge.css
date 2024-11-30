@@ -1,0 +1,33 @@
+.badge {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: Green;
+    font-weight: bold;
+    margin: '0 10px' 
+}
+
+.badge-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background: red;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.admin-home .badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 12px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: #0000004c;
+    border-radius: 100px;
+    overflow: hidden;
+}

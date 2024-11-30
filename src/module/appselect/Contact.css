@@ -1,0 +1,42 @@
+/* .label {
+    width: 139px;
+    height: 34px;
+} */
+
+.label .text {
+    position: fixed;
+    height: 34px;
+    font-size: 50px;
+    top: 0;
+    left: 0;
+    /* font-family: var(--heading-h3-font-family); */
+    /* font-weight: var(--heading-h3-font-weight); */
+    color: rgba(23, 132, 119, 1);
+    /* font-size: var(--heading-h3-font-size);
+    letter-spacing: var(--heading-h3-letter-spacing);
+    line-height: var(--heading-h3-line-height);
+    white-space: nowrap;
+    font-style: var(--heading-h3-font-style); */
+}
+
+.modal {
+    position: fixed; /* This allows the modal to overlay the viewport */
+    top:  70px;
+    left: 0;
+    width: 100%;  /* Full width */
+    height: 40%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    
+    justify-content: center; /* Center modal content horizontally */
+    /* align-items: center; /* Center modal content vertically
+    z-index: 1000; /* High z-index to ensure it appears on top */
+}
+
+.modal-content {
+    background: white; /* Background color of the modal */
+    padding: 3px;
+    border-radius: 5px;
+    width: 90%; /* Adjust according to need */
+    box-shadow: 0 2px 10px rgba(19, 17, 17, 0.5);  /*Optional shadow for depth */
+} 

@@ -526,27 +526,28 @@
 
     position: fixed; /* This allows the modal to overlay the viewport */
     top:  0px;
-    left: 0;
-    width: 100%;  /* Full width */
-    height: 50%; /* Full height */
+    left: 1050px;
+    width: 47%;  /* Full width */
+    height: 100%; /* Full height */
     background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    overflow-y: auto; /* Enable vertical scrolling */
+    /* overflow-y: auto; Enable vertical scrolling */
     
-    justify-content: center; /* Center modal content horizontally */
+    /* justify-content: center; /* Center modal content horizontally */
     /* align-items: center; /* Center modal content vertically */
-    /* z-index: 1000; /* High z-index to ensure it appears on top */
+    z-index: 1000; /* High z-index to ensure it appears on top */
+    overflow-y: scroll;    
 }
 
 .pane-contact .heading-content {    
     background: white; /* Background color of the modal */
     /* padding: 0px; */
-    padding: 32px 46px;
+    /* padding: 32px 60px 0px; */
     top: 0;
     height: 100%;
     border-radius: 0px;
     /* width: 100%; */
     box-shadow: 0 2px 10px rgba(19, 17, 17, 0.5);  /*Optional shadow for depth */
-    /* z-index: 1000; */
+    z-index: 1000;
 }
 
 
@@ -559,7 +560,7 @@
     position: relative;
     flex: 1;
     align-self: stretch;
-    width: 100%;
+    /* width: 100%; */
     flex-grow: 1;
     background-color: var(--grey-100);
     border-left-width: 1px;
@@ -569,7 +570,7 @@
 
 .pane-contact .heading-container {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     position: relative;
     align-self: stretch;
@@ -578,11 +579,20 @@
     /* z-index: 1000; */
 }
 
+.pane-contact .right-container {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 4px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
 .pane-contact .div-wrapper {
     display: inline-flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     flex: 0 0 auto;
     background-color: var(--hitbox);
@@ -590,7 +600,7 @@
 
 .pane-contact .wrapper {
     display: inline-flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 6px;
     position: relative;
     flex: 0 0 auto;
@@ -599,8 +609,8 @@
 .pane-contact .icon-wrapper {
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
     position: relative;
     flex: 0 0 auto;
     background-color: var(--hitbox);
@@ -641,7 +651,7 @@
     gap: 4px;
     position: relative;
     flex: 0 0 auto;
-    z-index: ;
+    /* z-index: ; */
 }
 
 .pane-contact .button-other {
@@ -671,10 +681,10 @@
     position: relative;
     flex: 1;
     align-self: stretch;
-    width: 100%;
+    /* width: 100%; */
     flex-grow: 1;
     /* z-index: 1000; */
-    overflow-y: scroll;
+
 }
 
 .pane-contact .frame {
@@ -693,10 +703,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    /* justify-content: center; */
     position: relative;
     align-self: stretch;
-    width: 100%;
+    /* width: 100%; */
     flex: 0 0 auto;
     background-color: var(--hitbox);
 }
@@ -733,7 +743,7 @@
     display: flex;
     flex-direction: column;
     align-self: stretch;
-    width: 100%;
+    /* width: 100%; */
     flex: 0 0 auto;
     z-index: 6;
     align-items: flex-start;
@@ -743,7 +753,7 @@
 .pane-contact .table-rows {
     display: flex;
     align-self: stretch;
-    width: 100%;
+    /* width: 100%; */
     flex: 0 0 auto;
     align-items: flex-start;
     position: relative;
@@ -861,7 +871,7 @@
     width: 100%;
     flex: 0 0 auto;
     z-index: 5;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .pane-contact .frame-2 {
@@ -869,9 +879,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-    align-self: stretch;
-    width: 100%;
-    z-index: 4;
+    /* align-self: stretch; */
+    /* width: 100%; */
+    /* z-index: 4; */
     position: relative;
     flex: 0 0 auto;
 }
@@ -921,9 +931,9 @@
     z-index: 3;
     position: relative;
     align-self: stretch;
-    width: 100%;
+    /* width: 100%; */
     flex: 0 0 auto;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .pane-contact .frame-5 {
@@ -932,8 +942,8 @@
     align-items: flex-start;
     gap: 8px;
     align-self: stretch;
-    width: 100%;
-    z-index: 2;
+    /* width: 100%; */
+    /* z-index: 2; */
     position: relative;
     flex: 0 0 auto;
 }
@@ -957,7 +967,7 @@
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .pane-contact .frame-6 {
@@ -998,3 +1008,5 @@
     width: 20px;
     height: 20px;
 }
+
+.newline {margin-top: 20px;}

@@ -534,7 +534,7 @@
 
     
     justify-content: center; /* Center modal content horizontally */
-    /* align-items: center; /* Center modal content vertically
+    /* align-items: center; /* Center modal content vertically */
     z-index: 1000; /* High z-index to ensure it appears on top */
 }
 

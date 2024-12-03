@@ -1,5 +1,11 @@
 import './Contact.css'
 import login_smart from '../../img/login_smart.png';
+import telephone from '../../img/telephone.svg';
+import location_pin from '../../img/location_pin.svg';
+import small_phone from '../../img/small_phone.svg';
+import letter from '../../img/letter.svg';
+import divider_separator2 from '../../img/divider-separator2.png';
+import launch_expand from '../../img/launch_expand.svg';
 
 
 // Modal.js
@@ -17,21 +23,21 @@ const ContactPop = ({ isOpen, onClose }) => {
                         <div class="div-wrapper">
                             <div class="wrapper">
                                 <div class="icon-wrapper">
-                                    <div class="union-wrapper"><img class="union" src="img/union.svg" /></div>
+                                    <div class="union-wrapper"><img class="union" src={telephone} /></div>
                                 </div>
                                 <div class="text">Contact Us</div>
                             </div>
                         </div>
-                        <div class="right-container">
-                            <div class="button-other"><img class="img" src="img/icon.svg" /></div>
-                        </div>
+                        <div class="right-container">                                
+                            <div class="close" onClick={onClose}>&times;</div>
+                        </div>        
                     </div>
                     <div class="content-container">
-                        <div class="frame">
-                            <div class="text-wrapper"><div class="div">Working Hours</div></div>
-                            <div class="text-wrapper"><p class="text-2">8:30am to 5:45pm Monday to Friday</p></div>
-                            <div class="text-wrapper"><p class="text-2">Closed on Saturday, Sunday and Public Holiday</p></div>
-                        </div>
+                        {/* <div class="frame"> */}
+                        <div class="div">Working Hours</div>
+                        <div class="text-2">8:30am to 5:45pm Monday to Friday</div>
+                        <div class="text-2">Closed on Saturday, Sunday and Public Holiday</div>
+                        {/* </div> */}
                         <div class="table">
                             <div class="table-rows">
                                 <div class="table-col">
@@ -98,62 +104,72 @@ const ContactPop = ({ isOpen, onClose }) => {
                                 </div>
                             </div>
                         </div>
-                        <img class="divider-separator" src="img/divider-separator.svg" />
+                        <img class="divider-separator" src={divider_separator2} />
                         <div class="frame-2">
                             <div class="text-wrapper"><div class="div">For Broadcasting matters</div></div>
                             <div class="frame-3">
-                                <img class="img" src="img/image.svg" />
-                                <div class="text-text-2">
-                                    <p class="text-2">20/F, Wu Chung House, 213 Queen&#39;s Road East, Wan Chai, Hong Kong</p>
-                                </div>
+                                <img class="img" src={location_pin} />
+                                {/* <div class="text-text-2"> */}
+                                <div class="text-2">20/F, Wu Chung House, 213 Queen&#39;s Road East, Wan Chai, Hong Kong</div>
+                                {/* </div> */}
                             </div>
                             <div class="frame-4">
-                                <img class="img" src="img/phone-call.svg" />
+                                <img class="img" src={small_phone} />
                                 <div class="div-wrapper"><div class="text-5">(852) 2507 2219</div></div>
                             </div>
                             <div class="frame-4">
-                                <img class="img" src="img/email-letter.svg" />
+                                <img class="img" src={letter} />
                                 <div class="div-wrapper"><div class="text-5">webmaster@ofca.gov.hk</div></div>
                             </div>
                         </div>
-                        <img class="divider-separator-2" src="img/divider-separator.svg" />
-                        <div class="frame-5">
-                            <div class="text-wrapper">
-                                <p class="text-6">For Telecommunications and Unsolicited Electronic Messages matters</p>
-                            </div>
+                        <img class="divider-separator" src={divider_separator2} />
+                        <div class="frame-2">
+                            <div class="text-wrapper"><div class="div">For Telecommunications and Unsolicited Electronic Messages matters</div></div>
                             <div class="frame-3">
-                                <img class="img" src="img/location-pin-active.svg" />
-                                <div class="text-text-2">
-                                    <p class="text-2">29/F, Wu Chung House, 213 Queen&#39;s Road East, Wan Chai, Hong Kong</p>
-                                </div>
+                                <img class="img" src={location_pin} />
+                                {/* <div class="text-text-2"> */}
+                                {/* <div class="text-2">20/F, Wu Chung House, 213 Queen&#39;s Road East, Wan Chai, Hong Kong</div> */}
+                                <div class="text-2">29/F, Wu Chung House, 213 Queen&#39;s Road East, Wan Chai, Hong Kong</div>
+                                {/* </div> */}
                             </div>
                             <div class="frame-4">
-                                <img class="img" src="img/phone-call.svg" />
+                                <img class="img" src={small_phone} />
                                 <div class="div-wrapper"><div class="text-5">(852) 2803 5110</div></div>
                             </div>
                             <div class="frame-4">
-                                <img class="img" src="img/email-letter.svg" />
+                                <img class="img" src={letter} />
                                 <div class="div-wrapper"><div class="text-5">webmaster@ofca.gov.hk</div></div>
                             </div>
-                        </div>
-                        <img class="divider-separator-3" src="img/divider-separator.svg" />
-                        <div class="frame-6">
-                            <div class="text-wrapper"><p class="text-7">Or contact us by other means,</p></div>
-                            <a
+                        </div>    
+                        <img class="divider-separator" src={divider_separator2} />
+                        <div class="frame-2">
+                            <div class="text-wrapper"><div class="div"></div>Or contact us by other means,</div>
+                            <div class="frame-3">
+                                <img class="img" src={location_pin} />
+                                {/* <div class="text-2">29/F, Wu Chung House, 213 Queen&#39;s Road East, Wan Chai, Hong Kong</div> */}
+                                <a
                                 href="https://www.ofca.gov.hk/en/contact_us/enquiry/enquiries/index.html"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                            ><div class="div-wrapper">
-                                    <div class="wrapper-2">
-                                        <p class="text-5">Full Contact Information in OFCA website</p>
-                                        <img class="icon-launch-expand" src="img/launch-expand.svg" />
-                                    </div></div
-                                ></a>
+                                >   
+                                    <div class="div-wrapper">
+                                        <div class="wrapper-2">
+                                            <div class="text-5">Full Contact Information in OFCA website</div>
+                                            <img class="icon-launch-expand" src={launch_expand} />
+                                        </div>
+                                    </div>                                    
+                                </a>
+                            </div>                        
                         </div>
+                        
+
+
+
                     </div>
                 </div>
             </div>
         </div>
+        
     )
 }
 

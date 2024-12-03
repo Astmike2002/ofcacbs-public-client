@@ -549,6 +549,7 @@
     align-self: stretch;
     /* width: 100%; */
     flex: 0 0 auto;
+    z-index: 1; 
 }
 
 .page-wrapper .left-group {

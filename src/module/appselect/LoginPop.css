@@ -534,7 +534,7 @@
     display: flex;
     
     justify-content: center; /* Center modal content horizontally */
-    /* align-items: center; /* Center modal content vertically
+    /* align-items: center; Center modal content vertically */
     z-index: 1000; /* High z-index to ensure it appears on top */
 }
 
@@ -544,6 +544,7 @@
     border-radius: 5px;
     width: 40%; /* Adjust according to need */
     box-shadow: 0 2px 10px rgba(19, 17, 17, 0.5);  /*Optional shadow for depth */
+    z-index: 1000;
 }
 
 .modal-login .heading-container {

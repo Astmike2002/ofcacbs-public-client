@@ -15,13 +15,14 @@ const AppChoice = ({ isOpen, onClose }) => {
                 <div class="heading-container">
                     <img class="icon-arrow-left" src={arrow_left} />
                     <div class="text"><div class="text-wrapper">Online Licences Application</div></div>
-                    <div class="right-container">
+                    {/* <div class="right-container"> */}
                                 <div class="close" onClick={onClose}>&times;</div>
-                    </div>
+                    {/* </div> */}
                     {/* <div class="right-container">
                         <div class="button-other"><img class="icon" src="img/icon.svg" /></div>
                     </div> */}
                 </div>
+                
                 <div class="frame">
                     <div class="div">
                         <div class="wrapper-wrapper">

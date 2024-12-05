@@ -21,24 +21,25 @@ import React, { useState } from 'react';
 import AppChoice from './AppChoice';
 import LoginPop from './LoginPop';
 import ContactPop from './Contact';
-
+import SignOn from './SignOn';
 
 
 const AppSelect = () => {
 
-
     const [isOpen, setIsOpen] = useState(false);
     const [isOpenChoice, setIsOpenChoice] = useState(false);
     const [isOpenContact, setIsOpenContact] = useState(false);
+    const [isOpenSignOn, setIsOpenSignOn] = useState(false);
 
     const handleOpen = () => { setIsOpen(true); };
     const handleOpenChoice = () => { setIsOpenChoice(true); };
     const handleOpenContact = () => { setIsOpenContact(true); };
+    const handleOpenSignOn = () => { setIsOpenSignOn(true); };
 
     const handleClose = () => { setIsOpen(false); };
     const handleCloseChoice = () => { setIsOpenChoice(false); };
     const handleCloseContact = () => { setIsOpenContact(false); };
-
+    const handleCloseSignOn = () => { setIsOpenSignOn(false); };
 
     return (
 
@@ -49,7 +50,7 @@ const AppSelect = () => {
                         <div class="logo-ofca-logo-name">
                             <div class="logo-ofca-logo"><img class="image" src={ofcalogo} /></div>
                             <div class="div">
-                                <div class="div-wrapper"><p class="text">Office of the Communications Authority</p></div>
+                                <div class="div-wrapper"><div class="text">Office of the Communications Authority</div></div>
                                 <div class="div-wrapper"><div class="text-wrapper">Online Application Platform</div></div>
                             </div>
                         </div>
@@ -88,7 +89,6 @@ const AppSelect = () => {
                             <div class="div-wrapper">
                                 <div class="wrapper">
                                     <div class="icon-wrapper">
-                                        {/* <div class="icon-chevron-down"><img class="union-2" src={contact} /></div> */}
                                         <div class="icon-chevron-down" onClick={handleOpenContact}><img class="union" src={contact} /></div>
                                         <ContactPop isOpen={isOpenContact} onClose={handleCloseContact} />
                                     </div>
@@ -99,15 +99,16 @@ const AppSelect = () => {
                                 <div class="div-wrapper">
                                     <div class="wrapper">
                                         <div class="icon-wrapper">
-                                            {/* <div class="icon-chevron-down"><img class="union-3" src={login} /></div> */}
                                             <div class="icon-chevron-down" onClick={handleOpen}><img class="union" src={login} /></div>
-                                            <LoginPop isOpen={isOpen} onClose={handleClose} />
-                                        </div>
+                                                <LoginPop isOpen={isOpen} onClose={handleClose} />
+                                            </div>
                                         <div class="text-4">Login</div>
                                     </div>
                                 </div>
                                 <img class="divider-separator" src={line_divider} />
-                                <div class="div-wrapper"><div class="text-5">Sign Up</div></div>
+                                <div class="div-wrapper"><div onClick={handleOpenSignOn} class="text-5">Sign Up</div>       
+                                    <SignOn isOpen={isOpenSignOn} onClose={handleCloseSignOn} />
+                                 </div>
                             </div>
                         </div>
                     </div>

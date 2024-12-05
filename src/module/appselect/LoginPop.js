@@ -21,12 +21,12 @@ const LoginPop = ({ isOpen, onClose }) => {
                 <div class="heading-container">
                     <div class="logo-ofca-logo-name">
                         <div class="logo-ofca-logo"><img class="image" src={ofcalogo} /></div>
+                        <div class="close" onClick={onClose}>&times;</div>
                     </div>
                     
-                    <div class="right-container">
-                                <div class="close" onClick={onClose}>&times;</div>
-                                {/* <div class="button-other"><img class="icon" src={cross_quit} /></div> */}
-                    </div>
+                    {/* <div class="right-container">
+                                
+                    </div> */}
                 </div>
                 <div class="div">
                     <div class="div-wrapper"><div class="text-2">Login</div></div>

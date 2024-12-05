@@ -707,11 +707,11 @@
     background-color: var(--hitbox);
 }
 
-.close {
-    position: absolute; /* Position relative to the nearest relative ancestor */
-    right: 20px; /* Position from the right */
-    top: 0px; /* Position from the top */
-    font-size: 30px; /* Size of the close button */
-    cursor: pointer; /* Cursor pointer on hover */
-    color: #aaa; /* Color of the close button */
-}
+/* .global-menu .close {
+    position: relative; 
+    right: 0px; 
+    top: 0px; 
+    font-size: 30px;
+    cursor: pointer;
+    color: #aaa; 
+} */

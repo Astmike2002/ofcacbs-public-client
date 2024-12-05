@@ -603,6 +603,7 @@
     position: relative;
     flex: 0 0 auto;
     background-color: #ffffff00;
+    /* z-index: 1; */
 }
 
 .page-wrapper .text {
@@ -770,6 +771,7 @@
     gap: 16px;
     position: relative;
     flex: 0 0 auto;
+    /* z-index: 1; */
 }
 
 .page-wrapper .union-3 {
@@ -1411,3 +1413,4 @@
     height: 65.87px;
     object-fit: cover;
 }
+

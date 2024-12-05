@@ -1010,3 +1010,12 @@
 }
 
 .newline {margin-top: 20px;}
+
+.close {
+    position: absolute; 
+    left: 730px; 
+    top: 0px; 
+    font-size: 30px; 
+    cursor: pointer; 
+    color: #aaa; 
+ }

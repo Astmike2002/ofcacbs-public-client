@@ -24,13 +24,14 @@ const ContactPop = ({ isOpen, onClose }) => {
                             <div class="wrapper">
                                 <div class="icon-wrapper">
                                     <div class="union-wrapper"><img class="union" src={telephone} /></div>
+                                    <div class="close" onClick={onClose}>&times;</div>
                                 </div>
                                 <div class="text">Contact Us</div>
                             </div>
                         </div>
-                        <div class="right-container">                                
-                            <div class="close" onClick={onClose}>&times;</div>
-                        </div>        
+                        {/* <div class="right-container">                                
+                            
+                        </div>         */}
                     </div>
                     <div class="content-container">
                         {/* <div class="frame"> */}
